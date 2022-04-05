@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Random Comic </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css"/>
+      </head>
+      <body>
+        <div>
+          <img src="./images/whalesome0000.png" alt="">
+            <div>
+                <p>WHALESOME</p>
+                <p>COMICS</p>
+                <p>NFT</p>
+            </div>
+        </div>
+        <div id="container">
+          <div id="comic">
+            <div class="inner_container">
+                <img id="image_shower"/>
+              </div>
+              <div class="inner_container">
+                <img id="image_shower2"/>
+              </div>
+              
+              <div class="inner_container">
+                <img id="image_shower3"/>
+              </div>
+          </div>
+          <div id="button_container">
+            <button onclick="get_random_image()"> Random Comic </button>
+            <button id="download"> Download </button>
+          </div>
+        </div>
+
+        
+        <script src="index.js"></script>
+        <script src="html2canvas.min.js"></script>
+        <script>
+          document.getElementById('download').onclick = function(){
+            const screenshotTarget = document.getElementById('comic');
+
+            html2canvas(screenshotTarget).then((canvas) => {
+              const base64image = canvas.toDataURL('image/png');
+              let anchor = document.createElement('a');
+              anchor.setAttribute('href', base64image);
+              anchor.setAttribute('download', 'my-random-comic.png');
+              anchor.click();
+              anchor.remove();
+            })
+          }
+        </script>
+      </body>
+</html>
