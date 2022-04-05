@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "frame": "images/01.png"
+    },
+    {
+        "id": 2,
+        "frame": "images/02.png"
+    },
+    {
+        "id": 3,
+        "frame": "images/03.png"
+    },
+    {
+        "id": 4,
+        "frame": "images/04.png"
+    },
+    {
+        "id": 5,
+        "frame": "images/05.png"
+    },
+    {
+        "id": 6,
+        "frame": "images/06.png"
+    },
+    {
+        "id": 7,
+        "frame": "images/07.png"
+    },
+    {
+        "id": 8,
+        "frame": "images/08.png"
+    },
+    {
+        "id": 9,
+        "frame": "images/09.png"
+    }
+]
